@@ -13,7 +13,7 @@ public class DemoApp1Application {
 		ConfigurableApplicationContext ctx = SpringApplication.run(DemoApp1Application.class, args);
 		
 		OrderService order = ctx.getBean(OrderService.class);
-		 order.processOrder(1);
+		 order.processOrder(0);
 	}
 
 }
