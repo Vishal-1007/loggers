@@ -1,6 +1,8 @@
 package com.app.service;
 
-import lombok.extern.slf4j.Slf4j;  //Perform import from slf4J
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -19,7 +21,7 @@ public class OrderService {
       log.debug("Checking inventory for order ID: {}", orderId);
       
       try {
-          // Simulating some order processing logic
+          
           Thread.sleep(2000);
           log.info("Order {} processed successfully!", orderId);
       } catch (InterruptedException e) {
